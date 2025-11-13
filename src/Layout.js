@@ -31,7 +31,7 @@ const Layout = () => {
                   <a href="/#">TRANG CHỦ</a>
                 </li>
                 <li>
-                  <a href="/trang1">EGOV</a>
+                  <a href="/trang1">SẢN PHẨM</a>
                 </li>
                 <li>
                   <a href="/admin/products">QUẢN TRỊ</a>
@@ -56,6 +56,14 @@ const Layout = () => {
               <a href="/menu3" className="menu-item">
                 Menu 3
               </a>
+            </div>
+
+            <div className="search-container">
+              <input
+                type="text"
+                placeholder="Tìm kiếm sản phẩm..."
+                className="search-input"
+              />
             </div>
 
             <div className="menubar-right">
