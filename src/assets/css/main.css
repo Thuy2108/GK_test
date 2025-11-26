@@ -1,91 +1,55 @@
+/* --- Thiết lập cơ bản --- */
 body {
   margin: 0;
-}
-#topleft ul {
-  text-decoration: none;
-  list-style: none;
-  width: 350px;
-  padding-top: 20px;
-}
-#topleft ul li {
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-#topleft ul li a {
-  text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
-  color: blueviolet;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Màu nền nhẹ cho toàn bộ trang */
 }
 
-.header1 {
-  height: 160px;
-  display: flex;
-  flex-direction: column;
+/* --- MAIN HEADER --- */
+.main-header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.banner1 {
-  height: 104px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/* --- 1. TOP BAR (Thanh trên cùng) --- */
+.top-bar {
+  background-color: #2d74b2; /* Màu chủ đạo: Đỏ đậm */
+  padding: 8px 30px;
 }
 
-.ul1 {
+.top-bar-content {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-}
-
-.container {
-  min-height: 500px;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-}
-.menu {
-  height: 56px;
-  background-color: #b22d30;
-}
-.logo1 {
-  width: 560px;
-}
-
-/**********************/
-.menubar {
-  background-color: #b22d30;
-  height: 52px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
-  box-sizing: border-box;
+  align-items: center;
 }
 
-/* --- Menu bên trái --- */
-.menubar-left {
+.top-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 20px;
 }
 
-.menu-item {
+.top-nav-list li a {
   color: #fff;
   text-decoration: none;
-  font-family: "Segoe UI", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
-  transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
-.menu-item:hover {
-  text-decoration: underline;
-  opacity: 0.9;
+.top-nav-list li a:hover {
+  opacity: 0.8;
 }
 
-/* --- Phần bên phải (tên người dùng + đăng xuất) --- */
-.menubar-right {
+/* --- Khu vực User (Đăng nhập/Đăng xuất) --- */
+.top-bar-user-area {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
 }
 
 .username {
@@ -98,7 +62,7 @@ body {
   background-color: #fff;
   color: #b22d30;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 5px 12px;
   cursor: pointer;
   font-size: 13px;
@@ -107,15 +71,188 @@ body {
 }
 
 .logout-btn:hover {
-  background-color: #f5f5f5;
+  background-color: #eee;
 }
 
 .login-link {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  font-size: 14px;
 }
 
 .login-link:hover {
   text-decoration: underline;
+}
+
+/* --- 2. BANNER & LOGO --- */
+.banner-section {
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.logo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Căn giữa logo */
+}
+
+.site-logo {
+  max-width: 500px; /* Giới hạn kích thước logo */
+  height: auto;
+}
+
+/* --- 3. MENU BAR (Thanh điều hướng chính) --- */
+.menubar {
+  background-color: #427567; /* Màu menu chính: Đen/Xám đậm */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  border-top: 1px solid #11b3ad;
+}
+
+.menubar-left {
+  display: flex;
+  gap: 30px;
+  margin-right: auto; /* Đẩy khu vực công cụ sang phải */
+}
+
+.menu-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 5px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.menu-item:hover {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.menubar-right-tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* --- Ô tìm kiếm --- */
+.search-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-input {
+  border: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  outline: none;
+  width: 250px;
+}
+
+.search-btn {
+    border: none;
+    background-color: #eee;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #ddd;
+}
+
+/* --- GIỎ HÀNG (Cart icon) --- */
+.cart-box {
+  position: relative;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff; /* Màu giỏ hàng */
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #f44336; /* Đỏ */
+  color: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 50%;
+  min-width: 12px;
+  text-align: center;
+  line-height: 1;
+}
+
+/* --- MAIN CONTENT CONTAINER --- */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 60vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.main-footer {
+  background-color: #1d3557; 
+  color: #f1faee; 
+  padding: 30px 50px;
+  
+  /* Thuộc tính quan trọng để chia cột */
+  display: flex; 
+  justify-content: space-around;
+  align-items: flex-start;
+  
+  border-top: 5px solid #e63946;
+  flex-wrap: wrap; 
+}
+
+.footer-column {
+  /* Cho phép mỗi cột chiếm không gian bằng nhau (1fr) */
+  flex: 1; 
+  min-width: 280px; 
+  margin: 0 15px;
+}
+
+/* --- FOOTER STYLES --- */
+.footer-column h4 {
+  color: #a8dadc; 
+  border-bottom: 2px solid #a8dadc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-icon {
+  margin-right: 8px;
+  color: #e63946; 
+}
+
+.footer-map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-map-container iframe {
+  display: block; 
 }

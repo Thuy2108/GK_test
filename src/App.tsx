@@ -11,9 +11,12 @@ import Chitietsanpham from "./Chitietsanpham";
 import Trang2 from "./Trang2";
 // @ts-ignore
 import ListProducts from "./Listsanpham";
-
+// @ts-ignore
+import ProductDetail from "./ProductDetail";
 // @ts-ignore
 import ListProducts_SP from "./ListProducts_SP";
+// @ts-ignore
+import CartPage from "./CartPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -38,7 +41,8 @@ const App = () => {
           <Route path="trang1" element={<Trang1 />} />
           <Route path="trang2" element={<Trang2 />} />
           <Route path="sanpham/:id" element={<Chitietsanpham />} />
-          {/* <Route path="detail/:id" element={<ProductDetail />} /> */}
+          <Route path="detail/:id" element={<ProductDetail />} />
+          <Route path="cart" element={<CartPage />} />
 
           {/* ✅ Trang đăng nhập (nằm trong Layout) */}
           <Route path="login" element={<LoginPage />} />
