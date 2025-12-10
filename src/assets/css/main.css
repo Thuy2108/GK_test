@@ -1,7 +1,7 @@
 /* --- Thiết lập cơ bản --- */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f4f4f4; /* Màu nền nhẹ cho toàn bộ trang */
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .site-logo {
-  max-width: 500px; /* Giới hạn kích thước logo */
+  max-width: 800px; /* Giới hạn kích thước logo */
   height: auto;
 }
 
@@ -137,9 +137,9 @@ body {
 }
 
 .menubar-right-tools {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /* --- Ô tìm kiếm --- */
@@ -159,16 +159,16 @@ body {
 }
 
 .search-btn {
-    border: none;
-    background-color: #eee;
-    padding: 8px 10px;
-    cursor: pointer;
-    color: #333;
-    transition: background-color 0.2s;
+  border: none;
+  background-color: #eee;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.2s;
 }
 
 .search-btn:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 /* --- GIỎ HÀNG (Cart icon) --- */
@@ -205,37 +205,37 @@ body {
 
 /* --- FOOTER --- */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 30px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
 }
 .main-footer {
-  background-color: #1d3557; 
-  color: #f1faee; 
+  background-color: #1d3557;
+  color: #f1faee;
   padding: 30px 50px;
-  
+
   /* Thuộc tính quan trọng để chia cột */
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  
+
   border-top: 5px solid #e63946;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .footer-column {
   /* Cho phép mỗi cột chiếm không gian bằng nhau (1fr) */
-  flex: 1; 
-  min-width: 280px; 
+  flex: 1;
+  min-width: 280px;
   margin: 0 15px;
 }
 
 /* --- FOOTER STYLES --- */
 .footer-column h4 {
-  color: #a8dadc; 
+  color: #a8dadc;
   border-bottom: 2px solid #a8dadc;
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -244,7 +244,7 @@ footer {
 
 .footer-icon {
   margin-right: 8px;
-  color: #e63946; 
+  color: #e63946;
 }
 
 .footer-map-container {
@@ -254,5 +254,5 @@ footer {
 }
 
 .footer-map-container iframe {
-  display: block; 
+  display: block;
 }
